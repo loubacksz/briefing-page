@@ -4,6 +4,7 @@
     box-sizing: border-box ;
     height: 100%;
     font-family: Roboto;
+    border: 0px;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
     align-items: center;
 
-    background-image: url(./img/fundo.jpg);
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -31,27 +32,43 @@ footer {
 
 }
 
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: end;
+
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
 #nome {
 
-    height: 8%;
+    height: 10%;
+    width: 70%;
 
-    margin: 10px;
+    border-radius: 5px;
 
-    width: 50%;
-    
+    padding-left: 12px;
+
 }
 
 #cpf {
 
-    height: 8%;
+    height: 10%;
+    width: 70%;
 
-    margin: 10px;
+    margin-top: 20px;
+    padding-left: 12px;
 
-    width: 50%;
+    border-radius: 5px;
 
 }
 
-#ci-ink{display: flex; flex-direction: column; justify-content: center; color: rgba(255, 255, 255, 0.452);}
+#ci-ink {display: flex; flex-direction: column; justify-content: center; color: rgba(255, 255, 255, 0.452);}
 
 @media only screen and (max-width: 767px) {
 
@@ -59,14 +76,15 @@ footer {
 
         background-color: #293575;
 
-        height: 400px;
+        height: 615px;
         width: 85%;
 
         border-radius: 10px;
-
+        
+        padding-bottom: 60px;
         margin-top: 20px;
-
         margin-bottom: 20px;
+
     }
 
     footer {
@@ -75,21 +93,50 @@ footer {
     
     }
 
+    input::placeholder{
+        font-size: 15px;
+    }
+
+    #nome {
+
+        height: 10%;
+        width: 70%;
+    
+        border-radius: 5px;
+    
+        padding-left: 12px;
+    
+    }
+
+    #cpf {
+
+        height: 10%;
+        width: 70%;
+    
+        margin-top: 20px;
+        padding-left: 12px;
+    
+        border-radius: 5px;
+    
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     main{
+
         background-color: #293575;
         
-        height: 453px;
+        height: 615px;
         width: 85%;
 
         border-radius: 10px;
 
+        padding-bottom: 60px;
         margin-top: 20px;
-
         margin-bottom: 20px;
+
     }
 
     footer {
@@ -98,11 +145,16 @@ footer {
     
     }
 
+    input::placeholder{
+        font-size: 15px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
 
     main{
+
         background-color: #293575;
 
         height: 615px;
@@ -110,15 +162,20 @@ footer {
 
         border-radius: 10px;
 
+        padding-bottom: 60px;
         margin-top: 20px;
-
         margin-bottom: 20px;
+
     }
 
     footer {
 
         font-size: 12px;
     
+    }
+
+    input::placeholder{
+        font-size: 20px;
     }
 
 }
