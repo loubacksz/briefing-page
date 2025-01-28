@@ -16,9 +16,9 @@ body {
 
     display: grid;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
     justify-items: center;
     align-items: center;
 
@@ -28,7 +28,7 @@ body {
 
 }
 
-header{
+header {
     padding: 20px;
 }
 
@@ -68,10 +68,6 @@ footer {
     color: rgba(255, 255, 255, 0.452);
 }
 
-#ci-ink{
-    height: auto;
-}
-
 form {
 
     width: 100%;
@@ -84,6 +80,21 @@ form {
     padding-top: 30px;
     padding-bottom: 30px;
 
+}
+
+input[type=submit] {
+
+    width: 30%;
+
+    margin-top: 10px;
+    padding: 0px;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+input[type=submit]:hover {
+    background-color: #e2e2e2;
 }
 
 .form-input {
@@ -101,9 +112,15 @@ form {
 
     height: auto;
 
+    padding-top: 50px;
+
 }
 
-#name{
+#ci-ink {
+    height: auto;
+}
+
+#name {
     margin-bottom: 10px;
 }
 
@@ -111,46 +128,106 @@ form {
 
     footer { 
 
-        font-size: 7px;
+        font-size: 9px;
     
     }
 
     form {
 
-        height: 50%;
+        height: 60%;
         
     }
 
-    input::placeholder{
+    input::placeholder {
         font-size: 15px;
     }
 
     .ci-logo {
 
-        height: auto;
+        width: 70%;
+
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    .ci-logo {
+
         width: 60%;
 
-        padding-top: 50px;
-        
+    }
+
+}
+
+@media only screen and (min-width: 570px) {
+
+    .ci-logo {
+
+        width: 50%;
+
     }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    footer {
+    footer { 
 
-        font-size: 9px;
+        font-size: 12px;
     
     }
 
-    input::placeholder{
+    input::placeholder {
+
         font-size: 15px;
+
+    }
+
+    .ci-logo {
+
+        width: 40%;
+    
     }
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px)  and (max-width: 1300px){
+
+
+    footer {
+
+        font-size: 12px;
+    
+    }
+
+    input::placeholder {
+
+        font-size: 17px;
+
+    }
+
+    .ci-logo {
+
+        width: 30%;
+    
+    }
+
+    .form-input {
+
+        height: 43px;
+    
+        padding-left: 20px;
+    
+    }
+
+}
+
+@media only screen and (min-width: 1301px) {
+
+    main {
+        width: 30%;
+    }
 
     footer {
 
@@ -159,15 +236,12 @@ form {
     }
 
     input::placeholder{
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .ci-logo {
 
-        height: 200px;
-        width: 400px;
-    
-        margin-top: 70px;
+        width: 45%;
     
     }
 
@@ -176,7 +250,6 @@ form {
         height: 50px;
     
         padding-left: 20px;
-    
     
     }
 
