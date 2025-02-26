@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/static/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>C-I Briefing</title>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+
+        <img alt="Empresa C-Innovation logo" class="ci-logo" src="src/static/styles/img/ci-logo.png">
+
+        <form>
+            <input class="form-input" id="name" minlength="3" name="name" placeholder="Digite seu nome:" required type="text">
+
+            <input class="form-input" id="cpf" maxlength="14" minlength="11" name="cpf" pattern=".{3}\.?.{3}\.?.{3}-?.{2}" placeholder="Digite seu CPF:" required type="text">
+
+            <input class="form-input" name="enviar" type="submit">
+        </form>    
+
+    </main>
+
+    <footer> 
+        <h1 id="ci-ink">C-Innovation Brasil © 2007-2025</h1>
+    </footer>
+    
+    <script src="/src/core/script.js" type="module"></script>
+</body>
+</html>
