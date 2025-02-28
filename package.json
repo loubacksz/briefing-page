@@ -1,0 +1,10 @@
+{
+    "name": "backend-briefing",
+    "version": "1.0.0",
+    "description": "This is the API for a briefing page.",
+    "main": "index.js",
+    
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}

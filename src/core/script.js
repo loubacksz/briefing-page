@@ -1,4 +1,4 @@
-const enviar = document.getElementById("enviar");
+const enviar = document.getElementById("submit");
 console.log(enviar);
 const camposDoFormulario = document.querySelectorAll("[required]");
 
