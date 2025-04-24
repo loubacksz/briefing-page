@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/briefing-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>C-I Briefing</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="page-title">Briefing</h2>
+    </header>
+
+    <main class="main-container">
+        <section class="video-section">
+            <video controls id="briefing" playsinline>
+                <source src="../videos/task tracker 2.0.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="form-section">
+            <form>
+                <input autocomplete="on" class="form-input" disabled id="name" minlength="3" name="name"
+                    placeholder="Digite seu nome:" required type="text" />
+
+                <input autocomplete="on" class="form-input" disabled id="cpf" maxlength="14" minlength="11" name="cpf"
+                    pattern="^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$" placeholder="Digite seu CPF:" required type="text" />
+
+                <button disabled class="form-input" id="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h1 id="ci-ink">C-Innovation Brasil © 2007-2025</h1>
+    </footer>
+
+    <script src="../../core/briefing-page.js" type="module"></script>
+</body>
+
+
+</html>
