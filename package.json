@@ -4,7 +4,11 @@
     "description": "This is the API for a briefing page.",
     "main": "script.js",
     "dependencies": {
-        "express": "^4.21.2"
+        "express": "^4.22.2"
     },
-    "type": "module"
+    "type": "commonjs",
+    "devDependencies": {
+        "debug": "^4.4.3",
+        "nodemon": "^3.1.14"
+    }
 }

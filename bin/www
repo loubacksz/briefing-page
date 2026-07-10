@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+// shebang - first line at script file
+// used to define wich interpreter should run this code
+
+/**
+* Module dependencies
+*/
+
+const app = require('../app');
