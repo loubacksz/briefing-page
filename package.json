@@ -6,6 +6,11 @@
     "dependencies": {
         "express": "^4.22.2"
     },
+    "scripts": {
+        "start": "node ./bin/www",
+        "devstart": "nodemon ./bin/www",
+        "serverstart": "DEBUG=briefing-page:* npm run devstart"
+    },
     "type": "commonjs",
     "devDependencies": {
         "debug": "^4.4.3",
