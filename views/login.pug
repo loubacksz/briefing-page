@@ -1,0 +1,20 @@
+doctype html
+html(lang="pt-BR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title C-Innovation - Login
+    link(rel="stylesheet" href='/stylesheets/login.css')
+  body
+    .app-viewport
+      main.app-container
+        .logo-container
+          img(src="https://c-innovation.com/wp-content/uploads/CInnovationLogo.png" alt="C-Innovation Logo" class="logo-ci")
+        h2.instruction-text Por favor, insira seu nome e CPF:
+        form(method='POST').login-form
+          input.input-field(type="text" placeholder="Digite seu nome" required id="nome")
+          input.input-field(type="text" placeholder="Digite seu CPF" required id="cpf")
+          button.submit-btn(type="submit") Enviar
+
+      footer.footer-container
+        p.footer-text C-Innovation Brasil © 2007-#{new Date().getFullYear()}

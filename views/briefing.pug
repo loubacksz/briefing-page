@@ -1,0 +1,39 @@
+doctype html
+html(lang="pt-BR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Briefing Page
+    link(rel="stylesheet" href="/stylesheets/briefing.css")
+  body
+    .app-viewport
+      main.app-container
+        nav.navigation-tabs
+          button.tab-btn.active#btn-video Vídeo
+          button.tab-btn#btn-teste Teste
+
+        .content-box
+          .tab-content#content-video
+            .video-wrapper
+              video(controls)
+                source(src="/static/videos/briefing.mp4" type="video/mp4")
+                | Seu navegador não suporta vídeos.
+
+          .tab-content.hidden#content-teste
+            form.quiz-form#quiz-form
+              .quiz-question
+                p.question-text 1. Você compreendeu as regras de segurança do briefing?
+                label.option-label
+                  input(type="radio" name="question1" value="sim")
+                  span Sim, compreendi todas as regras.
+                label.option-label
+                  input(type="radio" name="question1" value="nao")
+                  span Não, ainda tenho dúvidas.
+
+          hr.divider
+
+          .action-area
+            button.action-btn.hidden#btn-proximo Próximo
+
+      footer.footer-container
+        p.footer-text C-Innovation Brasil © 2007-#{new Date().getFullYear()}
